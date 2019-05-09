@@ -132,7 +132,7 @@ def iterate_through_players_for(name, statistic)
 end
 
 def num_points_scored(player_name)
-   binding.pry
+  # binding.pry
   iterate_through_players_for(player_name, :points)
 end
 
