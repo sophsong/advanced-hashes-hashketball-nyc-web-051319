@@ -1,3 +1,4 @@
+
 def game_hash
   {
     :home => { :team_name => "Charlotte Hornets",
@@ -13,7 +14,7 @@ def game_hash
                   :blocks => 7,
                   :slam_dunks => 2
                  },
-                 {:player_name => "Bismak Biyombo",
+                 {:player_name => "Bismack Biyombo",
                   :number => 0,
                   :shoe => 16,
                   :points => 12,
@@ -120,8 +121,10 @@ end
 
 def iterate_through_players_for(name, statistic)
   game_hash.each do |team, game_data|
+    
     game_data[:players].each do |player|
       if player[:player_name] == name
+       
         return player[statistic]
       end
     end
@@ -129,6 +132,7 @@ def iterate_through_players_for(name, statistic)
 end
 
 def num_points_scored(player_name)
+  
   iterate_through_players_for(player_name, :points)
 end
 
