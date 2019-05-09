@@ -1,4 +1,4 @@
-require 'pry'
+
 def game_hash
   {
     :home => { :team_name => "Charlotte Hornets",
@@ -132,7 +132,7 @@ def iterate_through_players_for(name, statistic)
 end
 
 def num_points_scored(player_name)
-  # binding.pry
+  
   iterate_through_players_for(player_name, :points)
 end
 
