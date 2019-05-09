@@ -124,7 +124,7 @@ def iterate_through_players_for(name, statistic)
     
     game_data[:players].each do |player|
       if player[:player_name] == name
-        binding.pry
+       
         return player[statistic]
       end
     end
@@ -132,6 +132,7 @@ def iterate_through_players_for(name, statistic)
 end
 
 def num_points_scored(player_name)
+   binding.pry
   iterate_through_players_for(player_name, :points)
 end
 
