@@ -121,9 +121,10 @@ end
 
 def iterate_through_players_for(name, statistic)
   game_hash.each do |team, game_data|
-    binding.pry
+    
     game_data[:players].each do |player|
       if player[:player_name] == name
+        binding.pry
         return player[statistic]
       end
     end
