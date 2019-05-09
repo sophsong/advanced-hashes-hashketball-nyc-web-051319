@@ -130,10 +130,7 @@ end
 
 def num_points_scored(player_name)
   iterate_through_players_for(player_name, :points)
-   if game_data[:player_name] == player_name
-      return game_data[:number]
-    end
- 
+   
 end
 
 def shoe_size(player_name)
