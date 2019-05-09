@@ -133,7 +133,7 @@ def num_points_scored(player_name)
    if game_data[:player_name] == player_name
       return game_data[:number]
     end
-  end
+ 
 end
 
 def shoe_size(player_name)
