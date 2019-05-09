@@ -120,6 +120,7 @@ end
 
 def iterate_through_players_for(name, statistic)
   game_hash.each do |team, game_data|
+    binding.pry
     game_data[:players].each do |player|
       if player[:player_name] == name
         return player[statistic]
@@ -130,7 +131,6 @@ end
 
 def num_points_scored(player_name)
   iterate_through_players_for(player_name, :points)
-   
 end
 
 def shoe_size(player_name)
